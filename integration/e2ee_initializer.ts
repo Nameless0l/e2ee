@@ -1,5 +1,3 @@
-// Initialisation du système de chiffrement E2EE
-
 import { SecureMessagingSDK } from '../messaging_sdk';
 import { AndroidSecureKeyStore, iOSSecureKeyStore, SecureKeyStore } from '../secure_storage';
 import { MyIdentityKeyStore } from '../identity_key_store';

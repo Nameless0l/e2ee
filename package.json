@@ -1,4 +1,14 @@
 {
+  "name": "e2ee-secure-storage",
+  "version": "1.0.0",
+  "description": "End-to-end encryption secure storage implementation",
+  "main": "secure_storage.ts",
+  "scripts": {
+    "test": "ts-node test_secure_storage.ts",
+    "test:simple": "node -r ts-node/register test_secure_storage.ts",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only ."
+  },
   "dependencies": {
     "buffer": "^6.0.3",
     "crypto-js": "^4.2.0",
@@ -8,6 +18,12 @@
     "whatwg-fetch": "^3.6.20"
   },
   "devDependencies": {
+    "@types/node": "^20.19.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
